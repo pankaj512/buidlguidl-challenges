@@ -1,0 +1,83 @@
+{
+  "address": "0xA63F5d8eBB739038Fd1d01bf1C094c6b91e96778",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "complete",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "completed",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "reset",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0xb976f707e10ab2ff9a1c73057b14dd41e659c79ab9a005e2b4d51866d5bfe60d",
+  "receipt": {
+    "to": null,
+    "from": "0x6cd9719b05d846f2F56c5D59b05Aa9F684d2cdEc",
+    "contractAddress": "0xA63F5d8eBB739038Fd1d01bf1C094c6b91e96778",
+    "transactionIndex": 80,
+    "gasUsed": "95761",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x4f033ce1d049fb8acdab45fd705c12cce8bb7c61989374fecc7c778ff8660d77",
+    "transactionHash": "0xb976f707e10ab2ff9a1c73057b14dd41e659c79ab9a005e2b4d51866d5bfe60d",
+    "logs": [],
+    "blockNumber": 9039817,
+    "cumulativeGasUsed": "7715158",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "numDeployments": 1,
+  "solcInputHash": "1cc311b49856906135d8e91a46010fc6",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.20+commit.a1b79de6\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"complete\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"completed\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"reset\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/ExampleExternalContract.sol\":\"ExampleExternalContract\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/ExampleExternalContract.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity 0.8.20; //Do not change the solidity version as it negatively impacts submission grading\\n\\ncontract ExampleExternalContract {\\n    bool public completed;\\n\\n    function complete() public payable {\\n        completed = true;\\n    }\\n\\n    function reset() public {\\n        completed = false;\\n    }\\n}\\n\",\"keccak256\":\"0x23c34fba04e3ba901bc1f9b484c88972cb44fac3616689772b5b9c576f099bec\",\"license\":\"MIT\"}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5060c48061001f6000396000f3fe60806040526004361060305760003560e01c8063522e11771460355780639d9a7fe9146048578063d826f88f146074575b600080fd5b60466000805460ff19166001179055565b005b348015605357600080fd5b5060005460609060ff1681565b604051901515815260200160405180910390f35b348015607f57600080fd5b5060466000805460ff1916905556fea264697066735822122056b53081c5ec44900953b8f2bd01996d07677c6abbf68201d4ce36b2069c07ae64736f6c63430008140033",
+  "deployedBytecode": "0x60806040526004361060305760003560e01c8063522e11771460355780639d9a7fe9146048578063d826f88f146074575b600080fd5b60466000805460ff19166001179055565b005b348015605357600080fd5b5060005460609060ff1681565b604051901515815260200160405180910390f35b348015607f57600080fd5b5060466000805460ff1916905556fea264697066735822122056b53081c5ec44900953b8f2bd01996d07677c6abbf68201d4ce36b2069c07ae64736f6c63430008140033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 3,
+        "contract": "contracts/ExampleExternalContract.sol:ExampleExternalContract",
+        "label": "completed",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_bool"
+      }
+    ],
+    "types": {
+      "t_bool": {
+        "encoding": "inplace",
+        "label": "bool",
+        "numberOfBytes": "1"
+      }
+    }
+  }
+}
