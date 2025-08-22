@@ -7,4 +7,8 @@ contract ExampleExternalContract {
     function complete() public payable {
         completed = true;
     }
+
+    function reset() public {
+        completed = false;
+    }
 }

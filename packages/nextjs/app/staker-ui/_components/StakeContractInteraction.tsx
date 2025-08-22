@@ -133,6 +133,20 @@ export const StakeContractInteraction = ({ address }: { address?: string }) => {
             🔏 Stake 0.5 ether!
           </button>
         </div>
+        <div className="flex flex-col space-y-5">
+          <button
+            className="btn btn-primary uppercase"
+            onClick={async () => {
+              try {
+                await writeContractAsync({ functionName: "restartStacking" });
+              } catch (err) {
+                console.error("Error calling stake function", err);
+              }
+            }}
+          >
+            🔄 Restart Staking!
+          </button>
+        </div>
       </div>
     </div>
   );
